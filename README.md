@@ -1,10 +1,11 @@
 ## Synopsis
 
-Nothing big and fancy here, just solves a 2d word puzzle by banging /usr/share/words against it.
+Nothing big and fancy here, just solves a 2d word puzzle by banging /usr/share/words against a few matrix view classes.
 
 ## Code Example
 
 s = Solver.new
+
 s.solve
 
 pretty simple :-)
@@ -15,6 +16,7 @@ A friend of mine had written a word puzzle solver on Mac OS using C++ and shared
 
 ## Installation
 
+git clone git@github.com:phunwerx/word-search-puzzle.git
 
 ## API Reference
 
@@ -23,6 +25,7 @@ N/A
 ## Tests
 
 chmod 755 solve
+
 ./solve
 
 ## Contributors
@@ -31,5 +34,5 @@ Philip Burchfield
 
 ## License
 
-[GNU GPL](http://www.gnu.org/copyleft/gpl.html).
+[GNU General Public License (GPL)](https://github.com/phunwerx/word-search-puzzle/blob/master/README.md)
 
