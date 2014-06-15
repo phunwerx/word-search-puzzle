@@ -162,9 +162,8 @@ class Solver
     f = File.open("/usr/share/dict/words", "r")
     f.each_line do |line|
       word = line.chomp.upcase
-      next if word.length < 5
-      where = locate word
-      puts where unless where.nil?
+      next if (word.length < 5) or (where = locate word).nil?
+      puts where
     end
     f.close
   end
