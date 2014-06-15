@@ -34,5 +34,5 @@ Philip Burchfield
 
 ## License
 
-[GNU General Public License (GPL)](https://github.com/phunwerx/word-search-puzzle/blob/master/README.md)
+[GNU General Public License (GPL)](https://github.com/phunwerx/word-search-puzzle/blob/master/LICENSE.md)
 
