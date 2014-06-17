@@ -1,6 +1,6 @@
 ## Synopsis
 
-Nothing big and fancy here, just solves a 2d word puzzle by banging /usr/share/words against a few matrix view classes.
+Nothing big and fancy here, just solves a 2d word puzzle by banging /usr/share/words against a different views of a matrix.
 
 ## Code Example
 
@@ -8,11 +8,11 @@ s = Solver.new
 
 s.solve
 
-pretty simple :-)
+pretty simple
 
 ## Motivation
 
-A friend of mine had written a word puzzle solver on Mac OS using C++ and shared the code with me, which I was able to compile and tinker with it using gnu g++ on my Linux Fedora system.  It inspired me because it's a fun and interesting problem without being too complicated, I had some time to kill, and ruby is just a wonderfully small, beautiful, and expressive language.
+A friend of mine had written a word puzzle solver on Mac OS using C++ and shared the code with me, which I was able to compile and tinker with it using gnu g++ on my Fedora Linux system.  It inspired me because it's a fun and interesting problem without being too complicated and I wanted to show how ruby is just a wonderfully small, beautiful, and expressive language. :-)
 
 ## Installation
 
