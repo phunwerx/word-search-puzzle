@@ -1,12 +1,21 @@
 ## Synopsis
 
-Nothing big and fancy here, just solves a 2d word puzzle by banging /usr/share/words against a different views of a matrix.
+Nothing big and fancy here, just solves a 2d word puzzle by banging /usr/share/dict/words against a different views of a matrix.
 
 ## Code Example
 
-s = Solver.new
+for ruby:
+
+```s = Solver.new
 
 s.solve
+```
+or python:
+
+```s = Solver()
+
+s.solve()
+```
 
 pretty simple
 
