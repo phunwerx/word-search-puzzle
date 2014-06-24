@@ -4,22 +4,20 @@
 #include <ctype.h>
 #include "solve.h"
 
-const char * dirptrs[][3] = {
+Direction _direction[] = {
   {"Southeast" ,"South",   "Southwest"},
-  {"East"      ,"neutral", "West"},
+  {"East"      ,0      ,   "West"},
   {"Northeast" ,"North",   "Northwest"}
 };
 
-typedef const char *(*_dp)[3];
-
-_dp direction = (_dp) &dirptrs[1][1];
+Direction * direction = (Direction *) &_direction[1][1];
 
 int compare(int left, int right)
 {
   if (left < right)
     return -1;
   if (left == right)
-    return -0;
+    return 0;
   return 1;
 }
 

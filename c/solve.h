@@ -8,6 +8,8 @@
 #define NUMROWS ROWSIZE
 #define NUMCOLS COLSIZE
 
+typedef const char * Direction[3];
+
 typedef enum{
   rows,
   columns,
