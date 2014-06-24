@@ -36,10 +36,16 @@ typedef struct{
 
 typedef View Views[NUMORIENT];
 
-void strrev(char *p);
+int compare(int left, int right);
+char * upcase(char * s);
+void reverse(char [], Letter []);
 void init(Matrix **, Views **);
+void load_rows_and_columns(Matrix *, Views *);
+void load_rl_diagonal(Matrix *, Views *);
+void load_lr_diagonal(Matrix *, Views *);
 void load_matrix(Matrix *);
 void load_views(Matrix *, Views *);
+void solve(Views *);
 void release(Matrix *, Views *);
 
 #endif /* SOLVE_H */
