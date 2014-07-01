@@ -170,5 +170,11 @@ class Solver
 
 end
 
-s = Solver.new
-s.solve
+def main
+  s = Solver.new
+  s.solve
+end
+
+if __FILE__ == $0
+    main
+end

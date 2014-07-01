@@ -109,5 +109,9 @@ class Solver(object):
                     continue
                 print where
 
-s=Solver()
-s.solve()
+def main():
+    s=Solver()
+    s.solve()
+
+if __name__ == "__main__":
+    main()
