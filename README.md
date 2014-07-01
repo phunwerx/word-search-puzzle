@@ -24,7 +24,7 @@ pretty simple
 
 ## Motivation
 
-A friend of mine had written a word puzzle solver on Mac OS using C++ and shared the code with me, which I was able to compile and tinker with it using gnu g++ on my Fedora Linux system.  It inspired me because it's a fun and interesting problem without being too complicated and I wanted to show how ruby, python, and friends are just a wonderfully small, beautiful, and expressive languages. :-)
+A friend of mine had written a word puzzle solver on Mac OS using C++ and shared the code with me, which I was able to compile and tinker with it using gnu g++ on my Fedora Linux system.  It inspired me because it's a fun and interesting problem without being too complicated and I wanted to show how ruby, python, and friends are wonderfully small, beautiful, powerful, and expressive languages. :-)
 
 ## Installation
 
