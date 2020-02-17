@@ -1,4 +1,7 @@
-#!/usr/bin/python
+#!/usr/bin/python3
+
+def cmp(a, b):
+    return (a > b) - (a < b) 
 
 class AutoVivification(dict):
     """Implementation of perl's autovivification feature."""
@@ -14,13 +17,13 @@ class Solver(object):
 
         _direction = AutoVivification()
         _direction[1][0]   = 'North'
-	_direction[1][-1]  = 'Northeast'
-	_direction[0][-1]  = 'East'
-	_direction[-1][-1] = 'Southeast'
-	_direction[-1][0]  = 'South'
-	_direction[-1][1]  = 'Southwest'
-	_direction[0][1]   = 'West'
-	_direction[1][1]   = 'Northwest'
+        _direction[1][-1]  = 'Northeast'
+        _direction[0][-1]  = 'East'
+        _direction[-1][-1] = 'Southeast'
+        _direction[-1][0]  = 'South'
+        _direction[-1][1]  = 'Southwest'
+        _direction[0][1]   = 'West'
+        _direction[1][1]   = 'Northwest'
 
         def __init__(self, letter=None, row=None, column=None):
             self.letter = letter
@@ -49,7 +52,7 @@ class Solver(object):
             return word[0].position()
 
         def locate(self,word):
-            for k,v in self.as_string.iteritems():
+            for k,v in self.as_string.items():
                 i = v.find(word)
                 if (i == -1):
                     continue
@@ -74,7 +77,7 @@ class Solver(object):
             h2.pop()
             h2.reverse()
             w=h1+h2
-            return [map(lambda (x,y):self.solver.matrix[x][y] ,group) for group in w]
+            return [[self.solver.matrix[x][y] for (x,y) in list(group)] for group in w]
 
     class LRDiagonalView(DiagonalView):
         def h1(self,l): return [zip(range(i,-1,-1),range(i+1)) for i in range(l)]
@@ -107,7 +110,7 @@ class Solver(object):
                 where = self.locate(word)
                 if (where is None):
                     continue
-                print where
+                print(where)
 
 def main():
     s=Solver()
